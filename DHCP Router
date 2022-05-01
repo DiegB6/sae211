@@ -1,0 +1,7 @@
+configure terminal
+ip dhcp pool Floor1DHCP
+network 192.168.15.0 255.255.255.0
+default-router 192.168.15.254
+exit
+service dhcp vlan1
+show ip dhcp binding
